@@ -1,7 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Download, Calendar } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Download } from "lucide-react";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
@@ -13,7 +12,7 @@ const Contact = () => {
             Let's Connect
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss opportunities in backend engineering, microservices, or technical leadership
+            Ready to discuss opportunities in backend engineering, microservices, or API integrations
           </p>
         </div>
 
@@ -32,7 +31,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-card-foreground">Email</p>
-                    <p className="text-muted-foreground">sairamchidurala93@gmail.com</p>
+                    <p className="text-muted-foreground">jangamharish949@gmail.com</p>
                   </div>
                 </div>
 
@@ -42,7 +41,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-card-foreground">Phone</p>
-                    <p className="text-muted-foreground">+91 9966365940</p>
+                    <p className="text-muted-foreground">+91 9505856020</p>
                   </div>
                 </div>
 
@@ -52,7 +51,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-card-foreground">Location</p>
-                    <p className="text-muted-foreground">Bangalore, Karnataka</p>
+                    <p className="text-muted-foreground">Bengaluru, India</p>
                   </div>
                 </div>
               </div>
@@ -62,7 +61,7 @@ const Contact = () => {
                 <p className="font-medium text-card-foreground mb-4">Connect with me</p>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com/sairamchidurala"
+                    href="https://github.com/HarishJangam"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-secondary hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300"
@@ -70,7 +69,7 @@ const Contact = () => {
                     <Github className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://linkedin.com/in/sairam-chidurala"
+                    href="https://www.linkedin.com/in/jangamharish/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-secondary hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300"
@@ -91,7 +90,7 @@ const Contact = () => {
                 <Button
                   className="w-full justify-start bg-primary hover:bg-primary/90 text-primary-foreground shadow-accent-glow hover:shadow-accent-glow transition-all duration-300"
                   size="lg"
-                  onClick={() => window.open("mailto:sairamchidurala93@email.com", "_self")}
+                  onClick={() => window.open("mailto:jangamharish949@gmail.com", "_self")}
                 >
                   <Mail className="w-4 h-4 mr-3" />
                   Send Email
@@ -111,7 +110,7 @@ const Contact = () => {
                   variant="outline"
                   className="w-full justify-start border-border hover:border-primary/30 hover:bg-secondary transition-all duration-300"
                   size="lg"
-                  onClick={() => window.open("tel:+919966365940", "_self")}
+                  onClick={() => window.open("tel:+919505856020", "_self")}
                 >
                   <Phone className="w-4 h-4 mr-3" />
                   Call Now
@@ -125,8 +124,8 @@ const Contact = () => {
                   <span className="font-medium text-card-foreground">Available for Opportunities</span>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Open to discussing backend engineering roles, technical leadership positions,
-                  and challenging projects in fintech or enterprise software.
+                  Open to discussing backend engineering roles, microservices positions,
+                  and challenging projects in travel tech or enterprise software.
                 </p>
               </div>
             </Card>
@@ -138,10 +137,10 @@ const Contact = () => {
               Professional Summary
             </h3>
             <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Experienced Software Engineer specializing in Java-based backend systems, microservices architecture,
-              and team leadership. Proven track record of delivering enterprise solutions for major clients including
-              Tata Play, Kotak, and Bank of Baroda. Currently serving as technical lead for a team of 10 engineers
-              while driving innovation in AI-enhanced customer support platforms.
+              Backend Engineer with 2.7+ years of experience designing and scaling high-traffic microservices
+              and airline booking integrations. Specialized in Java, Spring Boot, distributed systems,
+              third-party API integrations, and performance optimization for travel platforms serving
+              millions of requests. Strong problem-solving skills with 500+ LeetCode and 180+ GeeksforGeeks solutions.
             </p>
           </Card>
 

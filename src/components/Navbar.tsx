@@ -12,15 +12,14 @@ const Navbar = () => {
     { href: "#skills", label: "Skills" },
     { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
-    { href: "https://iamsairam.in/blog", label: "Blogs", external: true },
+    { href: "https://leetcode.com/u/harish_jangam/", label: "LeetCode", external: true },
     { href: "#contact", label: "Contact" }
   ];
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = navItems.map(item => item.href.substring(1));
+      const sections = navItems.map(item => item.href.substring(1)).filter(s => !s.startsWith("http"));
       const scrollPosition = window.scrollY + 100;
-      const heroElement = document.getElementById('hero');
 
       const badge = document.querySelector('.inline-flex.items-center.gap-2.px-4.py-2');
       if (badge) {
@@ -61,7 +60,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className={`text-lg font-bold text-primary transition-opacity duration-300 ${showName ? 'opacity-100' : 'opacity-0'}`}>
-            Sai Ram Chidurala
+            Harish Jangam
           </div>
 
           {/* Desktop Navigation */}

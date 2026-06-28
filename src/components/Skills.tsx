@@ -1,41 +1,41 @@
 import { Card } from "@/components/ui/card";
-import { Code, Database, Server, GitBranch, MessageSquare, Settings } from "lucide-react";
+import { Code, Database, Server, GitBranch, Shield, Settings } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Languages & Frameworks",
     icon: Code,
-    skills: ["Java 8+", "Spring Boot", "REST APIs", "Python", "Flask"],
+    skills: ["Java", "C++", "SQL", "Spring Boot", "Spring Security", "Hibernate", "JPA"],
     color: "text-blue-400"
   },
   {
-    title: "Architecture & Scalability",
+    title: "API & Integration",
     icon: Server,
-    skills: ["Microservices", "Event-driven Systems", "System Design", "Design Patterns", "Multithreading", "Distributed Workflows"],
+    skills: ["REST APIs", "SOAP", "OAuth2", "JWT", "Microservices", "Third-party API Integrations"],
     color: "text-green-400"
   },
   {
     title: "Data & Messaging",
     icon: Database,
-    skills: ["MySQL", "MongoDB (NoSQL)", "Apache Kafka", "Webhooks", "Query Optimization"],
+    skills: ["MySQL", "JPA", "SQL Query Optimization", "Domain Modeling", "Data Consistency"],
     color: "text-purple-400"
   },
   {
     title: "DevOps & Delivery",
     icon: Settings,
-    skills: ["Git", "CI/CD (GitHub Actions, Jenkins)", "Docker", "Linux", "Bash", "Release Ownership"],
+    skills: ["Git", "Maven", "Jenkins", "AWS", "Datadog", "Linux", "Production Support"],
     color: "text-orange-400"
   },
   {
-    title: "Engineering Ownership",
-    icon: MessageSquare,
-    skills: ["End-to-end Feature Delivery", "Service Ownership", "Production Support", "Secure Integrations", "Requirement Refinement"],
+    title: "Testing & Quality",
+    icon: Shield,
+    skills: ["JUnit", "Mockito", "Exception Handling", "Request Validation", "Unit Testing"],
     color: "text-cyan-400"
   },
   {
-    title: "Collaboration & Leadership",
+    title: "Problem Solving",
     icon: GitBranch,
-    skills: ["Technical Mentoring", "Code Reviews", "Cross-functional Collaboration", "Stakeholder Communication", "Agile Execution"],
+    skills: ["LeetCode (500+)", "GeeksforGeeks (180+)", "Data Structures", "Algorithms", "System Design", "OOP"],
     color: "text-pink-400"
   }
 ];
@@ -49,7 +49,7 @@ const Skills = () => {
             Technical Expertise
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Backend skill set centered on service ownership, scalable architecture, and technical leadership
+            Backend skill set focused on microservices, API integrations, and performance optimization
           </p>
         </div>
         

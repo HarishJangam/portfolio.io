@@ -1,63 +1,44 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Users, TrendingUp, Award } from "lucide-react";
+import { Calendar, TrendingUp, Award } from "lucide-react";
 
 const experiences = [
   {
-    title: "Software Engineer II",
-    company: "Simplify360 (A Nextiva Company)",
-    period: "Apr 2026 - Present",
+    title: "Software Engineer I",
+    company: "Wego",
+    period: "Feb 2025 - Present",
     type: "Current Role",
     highlights: [
-      "Owning end-to-end delivery for backend workflows across Unibox CRM and enterprise customer support platforms",
-      "Leading technical execution for a team of 10 engineers through architecture guidance, task unblocking, and mentoring",
-      "Driving architecture decisions for scalable, event-driven workflows across WhatsApp, Facebook, and Live Chat channels",
-      "Integrated AI/ML capabilities for sentiment analysis and summarization to improve agent productivity and customer insights",
-      "Partnering with PM, QA, Design, and client-facing teams to scope releases and deliver reliable features",
-      "Strengthening release reliability through Dockerized services, CI/CD pipelines, and hands-on production support"
+      "Developed and maintained airline booking integrations with multiple airlines and GDS providers (Sabre, Air Arabia, Hitit) using Java and Spring Boot",
+      "Built end-to-end booking workflows including Search, Pricing, Revalidation, Booking, and Ticketing",
+      "Built and optimized third-party API integration modules, reducing integration-related failures by approximately 10%",
+      "Implemented asynchronous processing for multi-provider booking flows, improving response times by 10–12%",
+      "Developed ancillary service integrations for seats, baggage, and meals, contributing to an estimated 8–10% increase in ancillary booking revenue"
     ],
-    technologies: ["Java 8", "Spring Boot", "Kafka", "Docker", "AI/ML", "Microservices", "CI/CD", "System Design"],
+    technologies: ["Java", "Spring Boot", "REST APIs", "SOAP", "Microservices", "AWS", "Datadog"],
     achievements: [
-      "Service Ownership: Driving architecture, delivery, and production support for enterprise support workflows",
-      "Team Leadership: Guiding 10 engineers across implementation and release execution",
-      "Enterprise Clients: Tata Play, Kotak, Bank of Baroda"
+      "10% reduction in integration-related failures",
+      "10–12% improvement in booking response times",
+      "8–10% increase in ancillary booking revenue"
     ]
   },
   {
-    title: "Software Engineer I",
-    company: "Simplify360 (A Nextiva Company)",
-    period: "Oct 2024 - Mar 2026",
-    type: "1.5 Years",
+    title: "Associate Software Engineer",
+    company: "Crio.Do",
+    period: "Oct 2023 - Jan 2025",
+    type: "1.3 Years",
     highlights: [
-      "Designed scalable microservices for WhatsApp, Facebook, and Live Chat platforms",
-      "Built event-driven systems using Kafka for ticket management",
-      "Implemented multithreading locking system for sequential message processing",
-      "Collaborated with cross-functional teams to release features for the Unibox CRM platform",
-      "Provided production support and client-level customizations for enterprise bot systems"
+      "Developed and maintained RESTful APIs using Java, Spring Boot, Hibernate, and MySQL",
+      "Diagnosed and resolved API validation, business logic, and data-related issues",
+      "Reduced recurring defects by approximately 10–15% through systematic debugging and fixes",
+      "Performed database operations and optimized SQL queries using JPA and MySQL",
+      "Participated in production debugging, monitoring, and release activities"
     ],
-    technologies: ["Java 8", "Spring Boot", "Kafka", "Docker", "Microservices", "Multithreading"],
+    technologies: ["Java", "Spring Boot", "Hibernate", "JPA", "MySQL", "REST APIs", "JUnit"],
     achievements: [
-      "Built scalable messaging workflows for enterprise customer support",
-      "Strengthened platform reliability for high-volume real-time bot traffic"
-    ]
-  },
-  {
-    title: "Junior Software Engineer",
-    company: "Simplify360 (A Nextiva Company)",
-    period: "Oct 2022 - Oct 2024",
-    type: "2 Years",
-    highlights: [
-      "Created chatbots across WhatsApp, WebChat, Facebook, and Instagram",
-      "Increased automation coverage by 90% for Tata Play's support system",
-      "Reduced operational support costs by 40%",
-      "Developed robust backend APIs with secure third-party integrations",
-      "Collaborated directly with client stakeholders for requirements gathering"
-    ],
-    technologies: ["Java", "REST APIs", "WhatsApp API", "Facebook API", "CRM Integration"],
-    achievements: [
-      "90% automation coverage increase",
-      "40% cost reduction for Tata Play",
-      "Official appreciation certificate from Tata Play"
+      "10–15% reduction in recurring defects",
+      "Improved application performance through SQL query optimization",
+      "Contributed to smooth production deployments and release cycles"
     ]
   }
 ];
@@ -71,14 +52,14 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            3.5+ years of backend engineering with ownership across architecture, delivery, and enterprise-scale systems
+            2.7+ years of backend engineering building scalable microservices and airline booking integrations
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8">
           {experiences.map((exp, index) => (
             <Card
-              key={exp.title}
+              key={exp.title + exp.company}
               className="p-4 md:p-8 bg-card-gradient border-border hover:border-primary/30 transition-all duration-500 hover:shadow-subtle-glow"
               style={{ animationDelay: `${index * 200}ms` }}
             >

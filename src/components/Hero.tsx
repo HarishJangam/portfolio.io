@@ -1,19 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
-import mobileHeroBackground from "@/assets/mobile-hero-bg.jpg";
+import heroBackground from "@/assets/harish-pic.jpg";
 
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-0 pt-16">
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:block hidden"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
-      />
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:hidden block"
-        style={{ backgroundImage: `url(${mobileHeroBackground})` }}
       />
       <div className="absolute inset-0 bg-hero-gradient opacity-90" />
 
@@ -21,31 +16,31 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto text-center">
         <div className="animate-fade-in">
           <h1 className="text-hero-mobile md:text-hero font-bold mb-6 leading-tight">
-            <span className="text-foreground">Sai Ram</span>{" "}
-            <span className="text-primary">Chidurala</span>
+            <span className="text-foreground">Harish</span>{" "}
+            <span className="text-primary">Jangam</span>
           </h1>
 
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary/80 backdrop-blur-sm rounded-full mb-6">
             <div className="w-2 h-2 bg-primary rounded-full animate-glow-pulse" />
-            <span className="text-secondary-foreground font-medium">Software Engineer II</span>
+            <span className="text-secondary-foreground font-medium">Java Backend Developer</span>
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-            Backend Engineer with 3.5+ years of experience building scalable Java microservices,
-            owning end-to-end backend delivery, and mentoring engineers across enterprise
-            customer support platforms. Currently driving architecture and release execution
-            at Simplify360 (Nextiva Company).
+            Backend Engineer with 2.7+ years of experience designing and scaling high-traffic
+            microservices and airline booking integrations. Specialized in Java, Spring Boot,
+            distributed systems, and performance optimization for travel platforms serving
+            millions of requests.
           </p>
 
           {/* Contact Info */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-8 text-muted-foreground px-4">
             <div className="flex items-center justify-center gap-2">
               <MapPin className="w-4 h-4 text-primary" />
-              <span className="text-sm sm:text-base">Bangalore, Karnataka</span>
+              <span className="text-sm sm:text-base">Bengaluru, India</span>
             </div>
             <div className="flex items-center justify-center gap-2">
               <Phone className="w-4 h-4 text-primary" />
-              <span className="text-sm sm:text-base">+91 9966365940</span>
+              <span className="text-sm sm:text-base">+91 9505856020</span>
             </div>
           </div>
 
@@ -77,7 +72,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6 mt-8">
             <a
-              href="https://github.com/sairamchidurala"
+              href="https://github.com/HarishJangam"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300 hover:shadow-subtle-glow"
@@ -85,7 +80,7 @@ const Hero = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com/in/sairam-chidurala"
+              href="https://www.linkedin.com/in/jangamharish/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-secondary/50 hover:bg-primary/20 text-muted-foreground hover:text-primary transition-all duration-300 hover:shadow-subtle-glow"

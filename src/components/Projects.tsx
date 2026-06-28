@@ -1,61 +1,61 @@
 import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Trophy, Users, TrendingUp } from "lucide-react";
+import { ExternalLink, Trophy, TrendingUp } from "lucide-react";
 import ProjectDialog from "./ProjectDialog";
 
 const projects = [
   {
-    title: "WhatsApp Bot Automation Platform",
-    client: "Tata Play",
-    description: "Led the design and implementation of enterprise-grade WhatsApp bots that revolutionized customer support operations.",
+    title: "Airline Booking Integration Platform",
+    client: "Wego",
+    description: "Built and maintained airline booking integrations with multiple airlines and GDS providers, supporting end-to-end booking workflows for a global travel platform.",
     impact: [
-      "90% increase in automation coverage",
-      "40% reduction in operational support costs",
-      "Official appreciation certificate from client"
+      "10% reduction in integration-related failures",
+      "10–12% improvement in booking response times",
+      "End-to-end workflows: Search, Pricing, Booking, Ticketing"
     ],
-    technologies: ["Java 8", "Spring Boot", "WhatsApp Business API", "Kafka", "MySQL"],
-    type: "Enterprise Solution",
+    technologies: ["Java", "Spring Boot", "REST APIs", "SOAP", "Microservices", "AWS"],
+    type: "Enterprise Integration",
     status: "Live & Scaling"
   },
   {
-    title: "Multi-Platform Chatbot Ecosystem",
-    client: "Multiple Enterprise Clients",
-    description: "Built comprehensive chatbot solutions across WhatsApp, Facebook, Instagram, and WebChat serving millions of users.",
+    title: "Ancillary Services Integration",
+    client: "Wego",
+    description: "Developed ancillary service integrations for seats, baggage, and meals, standardizing airline API responses into internal domain models.",
     impact: [
-      "Millions of users served daily",
-      "Multi-platform integration",
-      "Real-time response management"
+      "8–10% increase in ancillary booking revenue",
+      "Standardized multi-airline API responses",
+      "Seamless add-on booking experience"
     ],
-    technologies: ["Java", "Spring Boot", "REST APIs", "MongoDB", "Third-party APIs"],
-    type: "Platform Development",
+    technologies: ["Java", "Spring Boot", "REST APIs", "Domain Modeling", "MySQL"],
+    type: "Revenue Optimization",
     status: "Production"
   },
   {
-    title: "Event-Driven Microservices Architecture",
-    client: "Simplify360 Platform",
-    description: "Designed scalable microservices with Kafka-based event streaming for ticket creation, assignment, and response management.",
+    title: "E-Commerce Application",
+    client: "Personal Project",
+    description: "Developed a microservices-based e-commerce platform with User Service and Product Service, secured with OAuth2 and JWT authentication.",
     impact: [
-      "Scalable message processing",
-      "Sequential webhook handling",
-      "High-performance architecture"
+      "Microservice architecture with separate services",
+      "Secure authentication and authorization",
+      "RESTful APIs with comprehensive test coverage"
     ],
-    technologies: ["Spring Boot", "Apache Kafka", "Docker", "Microservices", "Multithreading"],
-    type: "System Architecture",
-    status: "Production"
+    technologies: ["Java", "Spring Boot", "Spring Security", "OAuth2", "JWT", "MySQL", "JUnit"],
+    type: "Full-Stack Backend",
+    status: "Completed"
   },
   {
-    title: "AI-Enhanced Customer Support Platform",
-    client: "Unibox CRM",
-    description: "Integrated AI/ML capabilities including sentiment analysis and summarization to enhance agent efficiency and customer insights.",
+    title: "RESTful API Development",
+    client: "Crio.Do",
+    description: "Developed and maintained RESTful APIs supporting feature enhancements and backend application functionality with optimized database operations.",
     impact: [
-      "Enhanced agent productivity",
-      "Automated sentiment analysis",
-      "Intelligent summarization"
+      "10–15% reduction in recurring defects",
+      "Improved application stability and performance",
+      "Optimized SQL queries for data consistency"
     ],
-    technologies: ["Java", "AI/ML APIs", "Spring Boot", "CI/CD", "Docker"],
-    type: "AI Integration",
-    status: "Active Development"
+    technologies: ["Java", "Spring Boot", "Hibernate", "JPA", "MySQL", "REST APIs"],
+    type: "API Development",
+    status: "Production"
   }
 ];
 
@@ -81,12 +81,14 @@ const Projects = () => {
 
   const getProjectProblem = (title: string) => {
     switch (title) {
-      case "WhatsApp Bot Automation - Tata Play":
-        return "Tata Play was facing overwhelming customer support volume with manual processes leading to long response times, high operational costs, and inconsistent customer experience across multiple channels.";
-      case "Multi-Platform CRM Integration":
-        return "Enterprise clients needed unified customer support across WhatsApp, Facebook, Instagram, and WebChat but were managing separate systems, leading to fragmented customer data and inefficient agent workflows.";
-      case "Real-time Messaging Infrastructure":
-        return "Existing messaging systems couldn't handle high-volume, concurrent message processing while maintaining message order and reliability, causing delays and message loss during peak hours.";
+      case "Airline Booking Integration Platform":
+        return "Wego needed reliable integrations with multiple airlines and GDS providers (Sabre, Air Arabia, Hitit) to support end-to-end flight booking at scale, but inconsistent API responses and integration failures were impacting booking success rates.";
+      case "Ancillary Services Integration":
+        return "Travel platforms often miss ancillary revenue opportunities because airline APIs for seats, baggage, and meals have inconsistent formats and require complex normalization before they can be offered to users.";
+      case "E-Commerce Application":
+        return "Building a secure, scalable e-commerce backend required separating user and product concerns into independent services while ensuring authenticated access and reliable API operations.";
+      case "RESTful API Development":
+        return "The backend application faced recurring API validation errors, business logic bugs, and data inconsistencies that affected application stability and user experience.";
       default:
         return "Complex business challenges requiring scalable technical solutions.";
     }
@@ -94,12 +96,14 @@ const Projects = () => {
 
   const getProjectSolution = (title: string) => {
     switch (title) {
-      case "WhatsApp Bot Automation - Tata Play":
-        return "Designed and implemented an intelligent WhatsApp bot using Java 8, Spring Boot, and Kafka for event-driven processing. Integrated AI/ML capabilities for intent recognition and automated response generation, with fallback to human agents for complex queries.";
-      case "Multi-Platform CRM Integration":
-        return "Built a unified microservices architecture that consolidated all messaging platforms into a single CRM interface. Implemented real-time webhooks, message routing, and agent assignment algorithms with comprehensive analytics dashboard.";
-      case "Real-time Messaging Infrastructure":
-        return "Developed a scalable message processing system using multithreading and Kafka streams, implementing message queuing, deduplication, and sequential processing guarantees with MongoDB for persistence and Redis for caching.";
+      case "Airline Booking Integration Platform":
+        return "Developed Java and Spring Boot integration modules for multiple airlines and GDS providers, implementing asynchronous processing for multi-provider booking flows and standardizing responses into internal domain models.";
+      case "Ancillary Services Integration":
+        return "Built ancillary service integration modules for seats, baggage, and meals, mapping diverse airline API responses into a unified internal domain model to enable seamless add-on bookings.";
+      case "E-Commerce Application":
+        return "Designed User Service and Product Service following microservice architecture, implemented Spring Security with OAuth2 and JWT, and built RESTful APIs with exception handling, validation, and JUnit test coverage.";
+      case "RESTful API Development":
+        return "Developed and maintained RESTful APIs using Java, Spring Boot, Hibernate, and MySQL. Systematically diagnosed and resolved validation, logic, and data issues while optimizing SQL queries through JPA.";
       default:
         return "Innovative technical solutions leveraging modern backend technologies and best practices.";
     }
@@ -107,26 +111,33 @@ const Projects = () => {
 
   const getProjectMetrics = (title: string) => {
     switch (title) {
-      case "WhatsApp Bot Automation - Tata Play":
+      case "Airline Booking Integration Platform":
         return [
-          "90% automation coverage achieved",
-          "40% reduction in operational costs",
-          "Response time reduced from hours to seconds",
-          "Handles 10,000+ queries daily"
+          "10% reduction in integration-related failures",
+          "10–12% improvement in response times",
+          "Multi-provider async booking flows",
+          "Full booking lifecycle support"
         ];
-      case "Multi-Platform CRM Integration":
+      case "Ancillary Services Integration":
         return [
-          "4 platforms unified into single interface",
-          "60% improvement in agent productivity",
-          "Real-time sync across all channels",
-          "Serves millions of users daily"
+          "8–10% increase in ancillary revenue",
+          "Standardized multi-airline responses",
+          "Seats, baggage, and meals integration",
+          "Unified domain model architecture"
         ];
-      case "Real-time Messaging Infrastructure":
+      case "E-Commerce Application":
         return [
-          "Processes 50,000+ messages per minute",
-          "99.9% message delivery reliability",
-          "Sub-second message processing",
-          "Zero message loss during peak loads"
+          "Microservice architecture implemented",
+          "OAuth2 and JWT secured endpoints",
+          "Comprehensive unit test coverage",
+          "MVC pattern RESTful APIs"
+        ];
+      case "RESTful API Development":
+        return [
+          "10–15% reduction in recurring defects",
+          "Improved SQL query performance",
+          "Enhanced application stability",
+          "Smooth production deployments"
         ];
       default:
         return [];
@@ -141,7 +152,7 @@ const Projects = () => {
             Key Projects & Achievements
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Enterprise-scale solutions that delivered measurable business impact and technical excellence
+            Backend solutions delivering measurable impact in travel integrations and scalable API development
           </p>
         </div>
 
@@ -149,8 +160,9 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card
               key={project.title}
-              className="p-4 md:p-6 bg-card-gradient border-border hover:border-primary/30 transition-all duration-500 hover:shadow-subtle-glow group h-full"
+              className="p-4 md:p-6 bg-card-gradient border-border hover:border-primary/30 transition-all duration-500 hover:shadow-subtle-glow group h-full cursor-pointer"
               style={{ animationDelay: `${index * 150}ms` }}
+              onClick={() => handleProjectClick(project)}
             >
               {/* Header */}
               <div className="flex justify-between items-start mb-4">

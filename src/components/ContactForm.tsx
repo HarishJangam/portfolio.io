@@ -40,9 +40,9 @@ const ContactForm = () => {
       // Create mailto link with form data
       const subject = encodeURIComponent(data.subject);
       const body = encodeURIComponent(
-        `Hi Sai Ram,\n\n${data.message}\n\nBest regards,\n${data.name}\n${data.email}`
+        `Hi Harish,\n\n${data.message}\n\nBest regards,\n${data.name}\n${data.email}`
       );
-      const mailtoLink = `mailto:sairamchidurala93@gmail.com?subject=${subject}&body=${body}`;
+      const mailtoLink = `mailto:jangamharish949@gmail.com?subject=${subject}&body=${body}`;
 
       // Open email client
       window.location.href = mailtoLink;

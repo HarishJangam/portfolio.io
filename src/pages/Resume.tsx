@@ -34,47 +34,47 @@ const Resume = () => {
             {/* Header */}
             <div className="text-center mb-8">
               <h1 className="text-3xl font-bold text-foreground mb-2">
-                SAI RAM CHIDURALA
+                HARISH JANGAM
               </h1>
               <p className="text-lg text-primary font-semibold mb-4">
-                SOFTWARE ENGINEER II
+                JAVA BACKEND DEVELOPER
               </p>
 
               {/* Contact Info */}
               <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <MapPin className="w-4 h-4" />
-                  Bangalore, Karnataka
+                  Bengaluru, India
                 </div>
                 <div className="flex items-center gap-1">
                   <Phone className="w-4 h-4" />
-                  +91 9966365940
+                  +91 9505856020
                 </div>
-                <div className="flex items-center gap-1">
+                <a href="https://www.linkedin.com/in/jangamharish/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary">
                   <Linkedin className="w-4 h-4" />
                   LinkedIn
-                </div>
-                <div className="flex items-center gap-1">
+                </a>
+                <a href="https://github.com/HarishJangam" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-primary">
                   <Github className="w-4 h-4" />
                   GitHub
-                </div>
+                </a>
                 <div className="flex items-center gap-1">
                   <Mail className="w-4 h-4" />
-                  Sairam Chidurala
+                  jangamharish949@gmail.com
                 </div>
               </div>
             </div>
 
             <Separator className="mb-6" />
 
-            {/* Objective */}
+            {/* Professional Summary */}
             <section className="mb-6">
-              <h2 className="text-xl font-bold text-foreground mb-3">OBJECTIVE</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">PROFESSIONAL SUMMARY</h2>
               <p className="text-muted-foreground leading-relaxed">
-                Software Engineer II with 3.5+ years of experience building scalable Java microservices and owning backend
-                delivery for enterprise customer support platforms. Proven strength in system design, event-driven architecture,
-                CI/CD, production support, and cross-functional execution. Experienced in mentoring engineers, shaping
-                technical direction, and delivering reliable client-facing features in agile environments.
+                Backend Engineer with 2.7+ years of experience designing and scaling high-traffic microservices
+                and airline booking integrations. Specialized in Java, Spring Boot, distributed systems,
+                third-party API integrations, and performance optimization for travel platforms serving
+                millions of requests.
               </p>
             </section>
 
@@ -84,11 +84,10 @@ const Resume = () => {
             <section className="mb-6">
               <h2 className="text-xl font-bold text-foreground mb-3">TECHNICAL SKILLS</h2>
               <div className="space-y-2 text-muted-foreground">
-                <div><strong>Languages & Frameworks:</strong> Java 8+, Spring Boot, REST APIs, Python, Flask</div>
-                <div><strong>Architecture & Backend:</strong> Microservices, Event-driven Systems, Multithreading, Design Patterns, System Design</div>
-                <div><strong>Data & Messaging:</strong> MySQL, MongoDB (NoSQL), Apache Kafka, Webhooks, Query Optimization</div>
-                <div><strong>Delivery & Operations:</strong> Git, Docker, CI/CD (GitHub Actions, Jenkins), Linux, Bash, Production Support</div>
-                <div><strong>Engineering Practices:</strong> Code Reviews, Technical Mentoring, Service Ownership, Stakeholder Collaboration, Agile Execution</div>
+                <div><strong>Languages:</strong> Java, C++, SQL</div>
+                <div><strong>Frameworks & Libs:</strong> Spring Boot, Spring Security, Hibernate, JPA, JUnit, Mockito</div>
+                <div><strong>API & Integration:</strong> REST APIs, SOAP, OAuth2, JWT, Microservices</div>
+                <div><strong>Tools:</strong> MySQL, Postman, Git, Maven, Jenkins, AWS, Datadog, Linux</div>
               </div>
             </section>
 
@@ -96,48 +95,50 @@ const Resume = () => {
 
             {/* Experience */}
             <section className="mb-6">
-              <h2 className="text-xl font-bold text-foreground mb-3">EXPERIENCE</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">PROFESSIONAL EXPERIENCE</h2>
 
-              {/* Current Role */}
               <div className="mb-6">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-semibold text-foreground">Software Engineer II | Simplify360 (A Nextiva Company)</h3>
-                  <span className="text-sm text-muted-foreground">Apr 2026 - Present</span>
+                  <h3 className="text-lg font-semibold text-foreground">Software Engineer I | Wego</h3>
+                  <span className="text-sm text-muted-foreground">Feb 2025 - Present</span>
                 </div>
+                <p className="text-sm text-muted-foreground mb-2 italic">Bengaluru</p>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                  <li>Own backend delivery for enterprise workflows in Unibox CRM, turning business requirements into scalable service implementations and production releases.</li>
-                  <li>Drive architecture decisions for microservices and event-driven integrations across WhatsApp, Facebook, and Live Chat channels.</li>
-                  <li>Serve as the de facto technical lead for a team of 10 engineers, mentoring implementation, guiding technical decisions, and unblocking delivery.</li>
-                  <li>Integrated AI/ML capabilities such as sentiment analysis and summarization to improve agent productivity and customer insight.</li>
-                  <li>Partner with PM, QA, Design, and client-facing teams to scope releases, manage tradeoffs, and deliver reliable features for enterprise customers.</li>
-                  <li>Improved release reliability through Dockerized services, CI/CD pipelines, and hands-on production support for large enterprise accounts.</li>
+                  <li>Developed and maintained airline booking integrations with multiple airlines and GDS providers (Sabre, Air Arabia, Hitit) using Java and Spring Boot.</li>
+                  <li>Supported end-to-end booking workflows including Search, Pricing, Revalidation, Booking, and Ticketing.</li>
+                  <li>Built and optimized third-party API integration modules, reducing integration-related failures by approximately 10%.</li>
+                  <li>Implemented asynchronous processing for multi-provider booking flows, improving response times by 10–12%.</li>
+                  <li>Developed ancillary service integrations for seats, baggage, and meals, contributing to an estimated 8–10% increase in ancillary booking revenue.</li>
                 </ul>
               </div>
 
               <div className="mb-6">
                 <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-semibold text-foreground">Software Engineer I | Simplify360 (A Nextiva Company)</h3>
-                  <span className="text-sm text-muted-foreground">Oct 2024 - Mar 2026</span>
+                  <h3 className="text-lg font-semibold text-foreground">Associate Software Engineer | Crio.Do</h3>
+                  <span className="text-sm text-muted-foreground">Oct 2023 - Jan 2025</span>
                 </div>
+                <p className="text-sm text-muted-foreground mb-2 italic">Bengaluru</p>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                  <li>Designed and developed scalable microservices in Java 8 and Spring Boot for customer support platforms like WhatsApp, Facebook, and Live Chat.</li>
-                  <li>Built asynchronous event-driven systems using Kafka to streamline ticket creation, assignment, and response management.</li>
-                  <li>Designed and implemented a locking system using multithreading to ensure sequential processing of user-specific message webhooks at scale.</li>
-                  <li>Provided production support and client-level customization for real-time bot systems used by large enterprise clients.</li>
+                  <li>Developed and maintained RESTful APIs using Java, Spring Boot, Hibernate, and MySQL.</li>
+                  <li>Diagnosed and resolved API validation, business logic, and data-related issues, reducing recurring defects by approximately 10–15%.</li>
+                  <li>Performed database operations and optimized SQL queries using JPA and MySQL.</li>
+                  <li>Participated in production debugging, monitoring, and release activities.</li>
                 </ul>
               </div>
+            </section>
 
-              {/* Previous Role */}
-              <div className="mb-6">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-lg font-semibold text-foreground">Junior Software Engineer | Simplify360 (A Nextiva Company)</h3>
-                  <span className="text-sm text-muted-foreground">Oct 2022 - Oct 2024</span>
-                </div>
+            <Separator className="mb-6" />
+
+            {/* Projects */}
+            <section className="mb-6">
+              <h2 className="text-xl font-bold text-foreground mb-3">PROJECTS</h2>
+              <div className="mb-4">
+                <h3 className="text-lg font-semibold text-foreground mb-2">E-Commerce Application | Java, Spring Boot, JPA</h3>
                 <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                  <li>Created and maintained chatbots across WhatsApp, WebChat, Facebook, and Instagram, serving millions of users.</li>
-                  <li>Increased automation coverage by 90% for Tata Play's support system, reducing operational support costs by 40%.</li>
-                  <li>Developed robust backend APIs and workflows in Java, ensuring secure integration with third-party messaging APIs and CRM systems.</li>
-                  <li>Worked closely with client stakeholders, gathering requirements, providing demos, and supporting rollout of new features and bots.</li>
+                  <li>Developed User Service and Product Service using Java, Spring Boot, and MySQL following microservice architecture principles.</li>
+                  <li>Implemented authentication and authorization using Spring Security, OAuth2, and JWT.</li>
+                  <li>Designed and developed RESTful APIs following the MVC architecture pattern.</li>
+                  <li>Implemented exception handling, request validation, and unit test cases using JUnit.</li>
                 </ul>
               </div>
             </section>
@@ -145,13 +146,27 @@ const Resume = () => {
             <Separator className="mb-6" />
 
             {/* Achievements */}
-            <section>
+            <section className="mb-6">
               <h2 className="text-xl font-bold text-foreground mb-3">ACHIEVEMENTS</h2>
               <ul className="list-disc list-inside space-y-1 text-muted-foreground ml-4">
-                <li>Recognized by Tata Play with an official appreciation certificate for leading the design and implementation of WhatsApp Bots that significantly improved their CRM operations.</li>
-                <li>Progressed into a broader ownership role spanning architecture guidance, mentoring, and release execution across enterprise support workflows.</li>
-                <li>Contributed to client success stories by delivering enterprise-grade AI chatbots, leading to measurable improvements in agent productivity and cost savings.</li>
+                <li>Solved 500+ problems on LeetCode.</li>
+                <li>Solved 180+ problems on GeeksforGeeks.</li>
+                <li>Strong understanding of Data Structures, Algorithms, OOP, and System Design fundamentals.</li>
               </ul>
+            </section>
+
+            <Separator className="mb-6" />
+
+            {/* Education */}
+            <section>
+              <h2 className="text-xl font-bold text-foreground mb-3">EDUCATION</h2>
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="text-lg font-semibold text-foreground">Bachelor of Technology (B.Tech) — Computer Science and Engineering</h3>
+                  <p className="text-muted-foreground">Christu Jyothi Institute Of Technology And Science, Hyderabad, India</p>
+                </div>
+                <span className="text-sm text-muted-foreground">Aug 2018 - Aug 2022</span>
+              </div>
             </section>
           </CardContent>
         </Card>
