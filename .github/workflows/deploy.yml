@@ -4,30 +4,43 @@ on:
   push:
     branches: ["main"]
 
+# Grant necessary permissions for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm' # Activates caching for faster builds
 
       - name: Install dependencies
-        run: npm ci # Use 'npm install' if you don't have a package-lock.json yet
+        run: npm install
 
       - name: Build project
         run: npm run build
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # CRITICAL: This must match your framework's build output folder!
-          # (e.g., 'dist' for Vite, 'out' for Next.js, 'build' for Create React App)
           path: './dist' 
 
       - name: Deploy to GitHub Pages
